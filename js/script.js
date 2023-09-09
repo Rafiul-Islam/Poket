@@ -11,3 +11,5 @@ window.onscroll = function () {
     myNav.classList.remove("scroll");
   }
 };
+
+AOS.init();
