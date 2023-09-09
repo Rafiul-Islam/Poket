@@ -215,4 +215,39 @@ section {
 }
 .partners-section .content-wrapper img {
   max-width: 95%;
+}
+
+.contact-section .content-wrapper {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 12px;
+}
+.contact-section .content-wrapper .title,
+.contact-section .content-wrapper .sub-title {
+  color: #4a4a4a;
+}
+.contact-section .content-wrapper .sub-title {
+  margin-top: 1rem;
+}
+.contact-section .content-wrapper .form-container {
+  background: rgb(51, 180, 126);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.contact-section .content-wrapper .form-container .submit-btn {
+  background: rgb(8, 123, 89);
+  color: #fff;
+}
+
+.footer {
+  background: rgb(3, 155, 110);
+  color: #fff;
+  font-size: 90%;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover, .footer a:visited {
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */
