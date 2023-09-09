@@ -2,18 +2,6 @@
 
 $color-green: rgb(3, 155, 110);
 
-@mixin hide {
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
-@mixin show {
-  height: initial;
-  width: initial;
-  opacity: 1;
-}
-
 *,
 *::before,
 *::after {
@@ -27,6 +15,24 @@ body {
 .btn {
   &:focus {
     box-shadow: none;
+  }
+}
+
+.btn-success {
+  background: $color-green;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  @media (min-width: 1200px) {
+    max-width: 1024px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1024px;
   }
 }
 
@@ -115,6 +121,22 @@ body {
 }
 //-------------- END: Navbar CSS--------------
 
-main {
-  height: 300vh;
+//-------------- START: Hero CSS--------------
+.hero-section {
+  .info-container {
+    .info-title {
+      color: $color-green;
+    }
+    .info-sub-title {
+      color: #6b7069;
+      font-size: 1.3rem;
+      margin: 1rem 0;
+    }
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 450px;
+  }
 }
+//-------------- END: Hero CSS--------------
