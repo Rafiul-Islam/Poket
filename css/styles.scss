@@ -1,0 +1,120 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+
+$color-green: rgb(3, 155, 110);
+
+@mixin hide {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+@mixin show {
+  height: initial;
+  width: initial;
+  opacity: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+//-------------- START: Navbar CSS--------------
+.navbar {
+  padding: 1.5rem 0;
+  transition: padding 0.6s;
+
+  .navbar-brand {
+    .logo {
+      width: 130px;
+      @media (min-width: 992px) {
+        width: 150px;
+      }
+    }
+  }
+
+  .navbar-toggler.collapsed {
+    transform: rotate(0deg);
+    img {
+      transform: rotate(-180deg);
+
+      &:nth-child(1) {
+        display: inline;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    transform: rotate(-180deg);
+    img {
+      &:nth-child(1) {
+        display: none;
+      }
+      &:nth-child(2) {
+        display: inline;
+      }
+    }
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+    @media (min-width: 992px) {
+      align-items: center;
+      margin-top: 0;
+    }
+
+    .nav-item {
+      .nav-link {
+        color: $color-green !important;
+        border-bottom: 1px solid #fff;
+        @media (min-width: 992px) {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+
+        .contact-up-btn {
+          padding: 0.5rem 1.5rem;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      .active {
+        opacity: 1 !important;
+        border-bottom: 1px solid $color-green;
+      }
+    }
+  }
+}
+
+.navbar.scroll {
+  padding: 1.1rem 0;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+//-------------- END: Navbar CSS--------------
+
+main {
+  height: 300vh;
+}
