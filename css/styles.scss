@@ -1,6 +1,11 @@
-@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 $color-green: rgb(3, 155, 110);
+$color-orange: #ff975b;
+
+html {
+  font-size: 16px;
+}
 
 *,
 *::before,
@@ -9,19 +14,35 @@ $color-green: rgb(3, 155, 110);
 }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.3;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 .btn {
-  &:focus {
+  box-shadow: none;
+  &:focus,
+  &:active {
     box-shadow: none;
   }
 }
 
 .btn-success {
   background: $color-green;
+}
+
+.btn-outline-success {
+  border-color: $color-green;
+  &:hover {
+    background: $color-green;
+  }
+}
+
+.text-orange {
+  color: $color-orange;
 }
 
 .container,
@@ -147,6 +168,7 @@ section {
 }
 //-------------- END: Hero CSS--------------
 
+//-------------- START: Service CSS--------------
 .service-section {
   .service-introduction {
     .title {
@@ -163,15 +185,74 @@ section {
   .service-list {
     .media {
       margin-bottom: 1.5rem;
+      img {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+      }
       .title {
         color: #4a4a4a;
       }
 
       .details {
-        font-size: 0.98rem;
+        font-size: 1rem;
         color: #5c5c5c;
         font-weight: 400;
       }
+    }
+  }
+}
+//-------------- END: Service CSS--------------
+
+//-------------- START: Products CSS--------------
+.products-section {
+  .content-wrapper {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+
+    header {
+      h2 {
+        color: #4a4a4a;
+      }
+      p {
+        color: #4a4a4a;
+        font-size: 1.15rem;
+      }
+    }
+  }
+}
+//-------------- END: Products CSS--------------
+
+//-------------- START: Area of Focus CSS--------------
+.area-of-focus {
+  .title {
+    color: #4a4a4a;
+  }
+
+  .sub-title {
+    color: #4a4a4a;
+    font-size: 1.15rem;
+  }
+
+  img {
+    margin: 0.2rem;
+    border-radius: 4px;
+  }
+}
+//-------------- END: Area of Focus CSS--------------
+
+.partners-section {
+  .content-wrapper {
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    .title {
+      color: #4a4a4a;
+      margin-bottom: 3rem;
+    }
+    img {
+      max-width: 95%;
     }
   }
 }
