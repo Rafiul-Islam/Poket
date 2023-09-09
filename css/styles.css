@@ -62,12 +62,12 @@ h2 {
 }
 
 section {
-  margin: 4rem 0;
+  margin: 8rem 0;
 }
 
 .navbar {
   padding: 1.5rem 0;
-  transition: padding 0.6s;
+  transition: padding 0.4s;
 }
 .navbar .navbar-brand .logo {
   width: 130px;
@@ -140,6 +140,9 @@ section {
   -webkit-backdrop-filter: blur(5px);
 }
 
+.hero-section {
+  margin-top: 4rem;
+}
 .hero-section .info-container .info-title {
   color: rgb(3, 155, 110);
 }
