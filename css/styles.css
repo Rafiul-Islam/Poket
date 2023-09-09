@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.3;
 }
 
 .btn:focus {
@@ -36,6 +37,10 @@ body {
   .container-xxl {
     max-width: 1024px;
   }
+}
+
+section {
+  margin: 4rem 0;
 }
 
 .navbar {
@@ -124,4 +129,24 @@ body {
 .hero-section .hero-image {
   width: 100%;
   max-width: 450px;
+}
+
+.service-section .service-introduction .title {
+  color: #4a4a4a;
+}
+.service-section .service-introduction .details {
+  font-size: 1.15rem;
+  color: #5c5c5c;
+  font-weight: 400;
+}
+.service-section .service-list .media {
+  margin-bottom: 1.5rem;
+}
+.service-section .service-list .media .title {
+  color: #4a4a4a;
+}
+.service-section .service-list .media .details {
+  font-size: 0.98rem;
+  color: #5c5c5c;
+  font-weight: 400;
 }/*# sourceMappingURL=styles.css.map */
